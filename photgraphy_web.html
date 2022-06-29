@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Creating a grid</title>
+  <style type="text/css">
+    div{
+      /border: 1px solid black;/
+      /Remove the above line after all styling and element implementation/
+    }
+    body{
+        background-color: #e8e8e8;
+    }
+    #navbar{
+      display: flex;
+    }
+    #nav-logo{
+      width: 20%;
+      background: url('https://www.designmantic.com/blog/wp-content/uploads/2020/01/Photography-Logos.png');
+      background-repeat: no-repeat;
+            background-size: 200px;
+            border-radius: 50%;
+
+    }
+    #nav-menu{
+      display: flex;
+      flex-direction:row;
+      width: 90%;
+    }
+    #menu-bar{
+      display: flex;
+    }
+    .menu-item{
+      margin: 0px 0px 0px 10px;
+      padding: 5px;
+      width: 200px;
+      color: #F9D6D6;
+      background-color: black;
+    }
+    .menu-text{
+      text-align: center;    
+      }
+    #banner{
+      display: flex;
+      height: 410px;
+      align-items: center;
+      justify-content: center;
+      background-color: #FFCCCC;
+      
+            
+    }
+    .center {
+     display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+    #about-us{
+      border: 1px solid black;
+      text-align: center;
+    }
+    #about-us-heading, #about-us-content{
+      /border: 1px solid black;/
+      padding: 20px;
+      color: #600606;
+    }
+    #gallery{
+      font-style: bold;
+      font-family: all;
+      font-size: 40px;
+      font-variant-caps: all-petite-caps;
+      background-blend-mode: color-burn;
+      background-color: #DBDBC1;
+      text-align: center;
+      
+    }
+    #gallery-images{
+      display: flex;
+      justify-content: center;
+    }
+    .gallery-image-item1{
+      height: 200px;
+      width: 200px;
+      margin: 5px 30px;
+      text-align: center;
+      background: url('https://images.pexels.com/photos/2859616/pexels-photo-2859616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+      background-repeat: no-repeat;
+            background-size: 200px;
+
+
+    }
+    .gallery-image-item2{
+      height: 200px;
+      width: 200px;
+      margin: 5px 30px;
+      text-align: center;
+      background: url('https://i1.wp.com/static.fpoint7.com/uploads/2018/08/3.jpg?fit=1600%2C1107');
+      background-repeat: no-repeat;
+            background-size: 350px;
+
+    }
+    .gallery-image-item3{
+      height: 200px;
+      width: 200px;
+      margin: 5px 30px;
+      text-align: center;
+      background: url('https://media.istockphoto.com/photos/gold-queen-chess-standing-against-black-background-picture-id1154467452?k=6&m=1154467452&s=612x612&w=0&h=yqKaRpyoRWfh5TwhpCv4rjwxwPZ-_4iz5ta5Dk3eITQ=');
+      background-repeat: no-repeat;
+            background-size:cover;
+
+    }
+    .gallery-image-item4{
+      height: 200px;
+      width: 200px;
+      /*margin: 5px 30px;*/
+      text-align: center;
+      background: url('https://www.digital-photo-secrets.com/images/still-life-flower-famous.jpg');
+      background-repeat: no-repeat;
+            background-size: 200px;
+
+    }
+    .gallery-image-item5{
+      height: 200px; 
+      width: 200px;
+      margin: 5px 30px;
+      text-align: center;
+      background: url('https://www.studentartguide.com/wp-content/uploads/2015/02/high-contrast-lighting.jpg');
+      background-repeat: no-repeat;
+            background-size: 200px;
+
+    }
+    #contact-us-form-container{
+      display: flex;
+      height: auto;
+      /height should be set to auto while implementing actual form/
+      justify-content: center;
+      background-color: seashell;
+      font-size: 20px;
+    }
+    #contact-us-form{
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar">
+  <div id="nav-logo">
+  </div>  
+  <div id="nav-menu">
+    <div id="menu-bar">
+    <div class="menu-item">
+      <h2 class="menu-text">PORTRAIT PHOTOGRAPHY</h2>
+    </div>
+    <div class="menu-item">
+      <h2 class="menu-text">FOOD PHOTOGRAPHY</h2>
+    </div>
+    <div class="menu-item">
+      <h2 class="menu-text">STILL LIFE PHOTOGRAPHY</h2>
+    </div>
+    <div class="menu-item">
+        <h2 class="menu-text">WILDLIFE PHOTOGRAPHY</h2>
+    </div>
+    <div class="menu-item">
+        <h2 class="menu-text">TRAVEL PHOTOGRAPHY</h2>
+    </div>
+    <div class="menu-item">
+        <h2 class="menu-text"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVLAgnYN6F_lpe1ur17rd5kTMluh0qZYkp-J0FOML_ej1CM8QbeVE-uF-s2ezlpe_W3bQ&usqp=CAU" style="width:50%;"></h2>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="banner">
+<img src="https://photocontestguru.com/wp-content/uploads/2018/07/Banner-1.jpg" alt="Paris" style="width:50%;">
+</img>
+</div>
+<div id="about-us">
+  <div id="about-us-heading">
+    <h1>ABOUT</h1>
+  </div>
+  <div id="about-us-content">
+    <p>
+      <h3>The artist's world is limitless.</p>
+      <p>
+        Portrait photography is one of the most popular genres of photography, with good reason. Good portrait photographers are able to capture the personality and emotion of people around them, along with earning money via wedding photography, senior portraits, family photography sessions, and so on. Below, you’ll find everything we’ve written about portrait photography, intended for both beginners and professionals. Also, if you want some ideas beyond our basic portrait photography tips, take a look at our more specialized tutorials on weddings and flash photography. Those articles will help you with posing, camera settings, and lighting portraits. It isn’t always easy to take pictures of people, but it’s worth the effort to learn.
+      </p>
+      <p>
+        Food photography is a still life photography genre used to create attractive still life photographs of food. It is a specialization of commercial photography, the products of which are used in advertisements, magazines, packaging, menus or cookbooks. Professional food photography is a collaborative effort, usually involving an art director, a photographer, a food stylist, a prop stylist and their assistants.In advertising, food photography is often and sometimes controversially used to exaggerate the attractiveness or size of the advertised food, notably fast food.
+      </p>
+      <p>
+        Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.As well as requiring photography skills, wildlife photographers may need field craft skills. For example, some animals and birds are difficult to approach and thus a knowledge of the animal's and birds behavior is needed in order to be able to predict its actions. Photographing some species may require stalking skills or the use of a hide/blind for concealment.
+      </p>
+      <p>
+        Travel photography is a genre of photography that may involve the documentation of an area's landscape, people, cultures, customs, and history. The Photographic Society of America defines a travel photo as an image that expresses the feeling of a time and place, portrays a land, its people, or a culture in its natural state, and has no geographical limitations.
+      </p>
+    </h3>
+  </div>
+</div>
+<div id="gallery">
+  <div id="gallery-heading">
+    <h2>GALLERY</h2>
+  </div>
+  <div id="gallery-images">
+    <div class="gallery-image-item1">
+    </div>
+    <div class="gallery-image-item2">
+    </div>
+<div class="gallery-image-item3">
+    </div>
+    <div class="gallery-image-item4">
+    </div>
+    <div class="gallery-image-item5">
+    </div>
+  </div>
+</div>
+<div id="contact-us">
+  <div id="contact-us-heading">
+    <h1>REACH OUT TO US!</h1>
+  </div>
+  <div id="contact-us-form-container">
+    <div id="contact-us-form">
+      <div style="background-color: #C5F4EA;">
+    <h3>ENTER YOUR DETAILS :</h3>
+    <form>
+        <label for="fname"> First-name : </label>
+        
+<input type  ="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="mname">Last-name : </label>
+        <input type  ="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="lname"> Type of Photography you are interested in: </label>
+        <input type  ="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="state"> State: </label>
+        <select name="state" id="state" >
+            <option value="state">West Bengal</option>
+            <option value="state">Orissa</option>
+            <option value="state">Maharashtra</option>
+            <option value="state">Uttar Pradesh</option>
+            <option value="state">Punjab</option>
+            <option value="state">Andhra Pradesh</option>
+            <option value="state">Assam</option>
+            <option value="state">Goa</option>
+        </select>
+        <br>
+        <br>
+        <label for="gender">  Gender : </label><br>
+        <input type="radio" name="gender" id="gender"> Male <br>
+        <input type="radio" name="gender" id="gender" value="mail"> Female <br>
+        <input type="radio" name="gender" id="gender" value="mail"> Others <br>
+        <br>
+        <label for="Number"> Phone Number: </label>
+        <input type="tel" name="name" id="name" value="+91"> 
+        <br>
+        <br>
+        <label for="intro"> Address </label>
+        <br>
+        <textarea name="intro" id="intro" cols="50" rows="5"></textarea>
+        <br>
+        <br>
+        <label for="mail">Email : </label>
+        <input type="email" name="mail" id="mail">
+        <br>
+        <br>
+        <label for="pass">Password : </label>
+  <input type="password" name="password" id="password" >
+    <br>
+    <br>
+    <label for="pass">Re-type Password : </label>
+  <input type="password" name="password" id="password" >
+    <br>
+    <br>
+    <input type="submit" name="submit" id="submit" value="Submit">
+         
+    </form>
+    
+    </div>
+  </div>
+</div>
+</body>
+</html>
